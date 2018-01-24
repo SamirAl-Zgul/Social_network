@@ -1,5 +1,5 @@
 <?php // authenticate.php
- require_once 'login.php';
+ require_once 'login.php'; //require the file
  $connection = new mysqli($hn, $un, $pw, $db);
  if ($connection->connect_error) die($connection->connect_error);
  if (isset($_SERVER['PHP_AUTH_USER']) &&
